@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bool-dark: #010001;
+  --bool-gray: rgba(128, 128, 129 1);
+  --bool-primary: rgba(77, 160, 254, 1);
+  --bool-primary-soft: rgba(178, 231, 243, 1);
+  --bool-secondary: rgba(52, 180, 232, 1);
+}
+
+
+header {
+  background-color: var(--bool-primary);
+  background-image: url('../img/pattern.png');
+  background-size: 280px;
+
+}
+
+.logo_img {
+  padding: 1rem 0.5rem;
+/*   padding-top: 1rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.25; */
+}
