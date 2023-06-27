@@ -1,0 +1,34 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* #selector-id
+{
+  proptery: value
+} */
+
+
+/* Use the hash # to select elements with an id  */
+#title
+{
+  color:yellow;
+}
+
+#main-text {
+  color: black;
+}
+/* Use the dot . to select elements with a class  */
+.card {
+  background-color: black;
+  color: white;
+  margin-bottom: 16px;
+  padding: 10px;
+}
+.bot
+{
+  color: red;
+}
+
+div {
+  border: 4px solid black;
+}
