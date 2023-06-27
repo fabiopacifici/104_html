@@ -1,3 +1,4 @@
+/* Common */
 * {
   margin: 0;
   padding: 0;
@@ -5,15 +6,54 @@
 }
 
 :root {
+  --bool-white: #ffffff;
   --bool-dark: #010001;
-  --bool-gray: rgba(128, 128, 129 1);
+  --bool-gray: rgba(128, 128, 129, 1);
   --bool-primary: rgba(77, 160, 254, 1);
   --bool-primary-soft: rgba(178, 231, 243, 1);
   --bool-secondary: rgba(52, 180, 232, 1);
 }
 
+/* Utility */
 
-header {
+.py_1
+{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py_2{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.pl_1{
+  padding-left: 1rem;
+}
+.pt_1
+{
+  padding-top: 1rem;
+}
+.w_50{
+  width: 50%;
+}
+
+.text_left {
+  text-align: left;
+}
+/* .hightlight {
+  background-color: yellow;
+} */
+
+.bg_primary {
+  background-color: var(--bool-primary);
+  color: var(--bool-white)
+}
+.bg_primary_soft{
+  background-color: var(--bool-primary-soft);
+}
+
+/* Header */
+
+#site_header {
   background-color: var(--bool-primary);
   background-image: url('../img/pattern.png');
   background-size: 280px;
@@ -25,4 +65,34 @@ header {
 /*   padding-top: 1rem;
   padding-bottom: 0.25rem;
   padding-left: 0.25; */
+}
+
+
+/* Main */
+
+h1{
+  font-size: 2.2rem;
+}
+
+.meta {
+  color: var(--bool-gray);
+
+}
+
+.author_link {
+  text-decoration: none;
+  color: var(--bool-secondary);
+}
+
+.date {
+  font-size: 0.8rem;
+}
+
+.caption {
+  font-size: 0.8rem;
+
+}
+
+table {
+  border-spacing: 0;
 }
