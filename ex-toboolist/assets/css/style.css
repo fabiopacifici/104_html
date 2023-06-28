@@ -23,11 +23,20 @@ body
   --tb-bg-cross: rgba(235, 90, 83, 1);
   --tb-bg-mobile: rgba(243, 158, 50, 1);
   ;
-  --tb-bg-recruit: rgba(101, 192, 168, 1);
+  --tb-bg-recruiting: rgba(101, 192, 168, 1);
   --tb-bg-sales: rgba(176, 201, 38, 1);
   --tb-bg-website: rgba(216, 98, 160, 1);
   --tb-bg-goals: rgba(156, 115, 229, 1);
   --tb-bg-editorial: rgba(70, 172, 241, 1);
+}
+
+h3
+{
+  margin-bottom: 1rem;
+}
+li
+{
+  margin-bottom: 1rem;
 }
 /* #endregion Common */
 /* #region Utilities */
@@ -66,9 +75,11 @@ body
 {
   padding-top: 2rem;
 }
+
 /* Buttons */
 
-.btn {
+.btn
+{
   display: inline-block;
   padding: 0.25rem 0.5rem;
   background-color: transparent;
@@ -76,18 +87,92 @@ body
   border-radius: 0.25rem;
   font-size: 0.8rem;
 }
-.btn-primary {
+
+.btn-primary
+{
   background-color: var(--tb-bg-editorial);
   color: var(--tb-white);
 }
+
 .btn-outline-light
 {
   color: var(--tb-light);
   border: 1px solid var(--tb-light)
 }
 
-/* #endregion Utilities */
+.list-unstyled
+{
+  list-style: none;
+}
 
+.icon
+{
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 0.7rem;
+}
+
+.check
+{
+  border: 1px solid var(--tb-bg-check);
+  color: var(--tb-bg-check)
+}
+
+.cross
+{
+  border: 1px solid var(--tb-bg-cross);
+  color: var(--tb-bg-cross)
+}
+
+.badge
+{
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 1rem;
+  color: var(--tb-white);
+}
+
+.badge-editorial
+{
+  background-color: var(--tb-bg-editorial);
+}
+
+.badge-recruiting
+{
+  background-color: var(--tb-bg-recruiting);
+
+}
+
+.badge-goals
+{
+  background-color: var(--tb-bg-goals);
+
+}
+
+.badge-mobile
+{
+  background-color: var(--tb-bg-mobile);
+
+}
+
+.badge-website
+{
+  background-color: var(--tb-bg-website);
+
+}
+
+.badge-sales
+{
+  background-color: var(--tb-bg-sales);
+
+}
+
+/* #endregion Utilities */
 
 /* #region Header */
 #site_header
@@ -109,4 +194,7 @@ body
   vertical-align: middle;
   font-weight: 700;
 }
+
 /* #endregion Header */
+
+/* #region Main */
