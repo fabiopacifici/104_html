@@ -13,6 +13,7 @@
   --bool-primary: rgba(77, 160, 254, 1);
   --bool-primary-soft: rgba(178, 231, 243, 1);
   --bool-secondary: rgba(52, 180, 232, 1);
+  --bool-default-font-size: 18px;
 }
 
 h1
