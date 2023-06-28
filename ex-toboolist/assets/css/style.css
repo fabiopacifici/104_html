@@ -4,3 +4,38 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: var(--tb-light);
+  font-family: Arial, sans-serif;
+}
+:root{
+  --tb-light: rgba(247, 249, 249, 1);
+  --tb-white: white;
+  --tb-black: rgba(1, 0, 1, 1);
+  --tb-dark: rgba(68, 72, 81, 1);
+  --tb-bg-check: rgba(110, 196, 174, 1);
+  --tb-bg-cross: rgba(235, 90, 83, 1);
+  --tb-bg-mobile: rgba(243, 158, 50, 1);;
+  --tb-bg-recruit: rgba(101, 192, 168, 1);
+  --tb-bg-sales: rgba(176, 201, 38, 1);
+  --tb-bg-website: rgba(216, 98, 160, 1);
+  --tb-bg-goals: rgba(156, 115, 229, 1);
+  --tb-bg-editorial: rgba(70, 172, 241, 1);
+}
+
+#site_header{
+  background-color: var(--tb-white);
+  padding: .5rem;
+  box-shadow: 0 0 2px var(--tb-black);
+}
+
+.logo_img{
+  height: 100%;
+  vertical-align: middle;
+}
+
+.logo_text{ 
+  font-size: 2.2rem;
+  vertical-align: middle;
+  font-weight: 700;
+}
