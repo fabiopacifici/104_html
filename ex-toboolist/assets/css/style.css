@@ -1,4 +1,4 @@
-/* Common */
+/* #region Common */
 *
 {
   margin: 0;
@@ -29,7 +29,8 @@ body
   --tb-bg-goals: rgba(156, 115, 229, 1);
   --tb-bg-editorial: rgba(70, 172, 241, 1);
 }
-
+/* #endregion Common */
+/* #region Utilities */
 .container
 {
   width: 80%;
@@ -60,11 +61,12 @@ body
   padding-bottom: 0.5rem
 }
 
-/* Utilities */
+/* Spacings */
 .pt-4
 {
   padding-top: 2rem;
 }
+/* Buttons */
 
 .btn {
   display: inline-block;
@@ -83,7 +85,11 @@ body
   color: var(--tb-light);
   border: 1px solid var(--tb-light)
 }
-/* Header */
+
+/* #endregion Utilities */
+
+
+/* #region Header */
 #site_header
 {
   background-color: var(--tb-white);
@@ -103,3 +109,4 @@ body
   vertical-align: middle;
   font-weight: 700;
 }
+/* #endregion Header */
