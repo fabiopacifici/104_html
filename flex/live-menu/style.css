@@ -1,0 +1,32 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header
+{
+  background: rgb(235, 235, 235);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: 0 0 5px black;
+}
+
+.logo
+{
+  font-size: 45px;
+}
+
+.menu
+{
+  display: flex;
+}
+
+.menu-item
+{
+  padding: 0 15px;
+}
