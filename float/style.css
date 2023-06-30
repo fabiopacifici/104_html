@@ -1,0 +1,33 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container  {
+  border: 2px solid red;
+}
+
+.container > div {
+  width: 200px;
+  aspect-ratio: 1 / 1;
+}
+
+.blue {
+  background-color: blue;
+  float: left;
+}
+
+.pink
+{
+  background-color: pink;
+  float: right;
+}
+
+
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+}

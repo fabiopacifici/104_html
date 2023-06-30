@@ -1,0 +1,31 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  width: 80%;
+  margin: auto;
+}
+
+
+.row::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.row .col {
+  float: left;
+  width: calc(100% / 3);
+  padding: 0 1rem;
+}
+
+/* Debug - remove it before sending the exercise */
+/* .debug .col {
+  height: 200px;
+  background-color: red;
+} */

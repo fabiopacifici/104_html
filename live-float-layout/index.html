@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Float Simple Layout</title>
+        <!-- FONTS -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- MAIN STYLES -->
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+
+    <body>
+        <main class="container">
+            <h1>Float Simple Layout</h1>
+
+            <!-- LAYOUT SEMPLICE CON FLOAT
+            Mostrare come, senza clearfix, l'altezza del padre
+            non si adatta a quella dei figli flottanti
+            -->
+            <section class="columns clearfix">
+                <div class="col">
+                    <img src="./img/image1.svg" alt="Lorem ipsum text here" />
+                    <h3>Title column 1</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Magnam sunt ex laboriosam eaque molestiae, quos
+                        commodi qui veniam dolore, porro esse veritatis
+                        doloribus ducimus culpa eum officia consectetur aut
+                        assumenda?
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="./img/image2.svg" alt="Lorem ipsum text here" />
+                    <h3>Title column 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Magnam sunt ex laboriosam eaque molestiae, quos
+                        commodi qui veniam dolore, porro esse veritatis
+                        doloribus ducimus culpa eum officia consectetur aut
+                        assumenda?
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="./img/image3.svg" alt="Lorem ipsum text here" />
+                    <h3>Title column 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Magnam sunt ex laboriosam eaque molestiae?
+                    </p>
+                </div>
+            </section>
+
+            <!--
+                Rafforziamo la necessita del clearfix
+                Cosa succede se rimuoviamo la classe clearfix
+                dall'elemento .columns?
+            -->
+            <section>
+                <h2>Next section title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Doloribus voluptates reiciendis quidem, hic explicabo
+                    dignissimos labore cumque cupiditate perferendis earum ad
+                    fugiat unde iure tempore ipsam illo. Asperiores, laboriosam
+                    nostrum?
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

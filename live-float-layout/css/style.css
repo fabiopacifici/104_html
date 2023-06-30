@@ -1,0 +1,60 @@
+/*
+GENERAL STYLES
+Color palette: https://www.happyhues.co/palettes/13
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    color: #fffffe;
+    background: #0f0e17;
+}
+
+h1,
+h2 {
+    color: #e53170;
+}
+
+h1 {
+    margin-top: 2rem;
+}
+
+h3 {
+    color: #ff8906;
+}
+
+/* UTILITIES */
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* SIMPLE FLOAT LAYOUT */
+.columns {
+    margin: 50px 0;
+    /* Sfondo debug per mostrare altezza container
+    con figli flottanti quando non viene settato
+    il clearfix */
+    /* background: rgba(255, 255, 0, 0.25); */
+}
+.columns .col {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 15px; /* padding non si somma a width */
+    text-align: center;
+}
+
+.columns .col img {
+    height: 150px;
+}
+
+/* CLEARFIX */
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}

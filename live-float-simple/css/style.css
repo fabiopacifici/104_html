@@ -1,0 +1,73 @@
+/*
+GENERAL STYLES
+Color palette: https://www.happyhues.co/palettes/13
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    color: #fffffe;
+    background: #0f0e17;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h1 {
+    margin: 2.5rem 0;
+    color: #e53170;
+}
+
+/* rivediamo un selettore avanzato */
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ff8906;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* UTILITIES */
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* 1 FLOAT LEFT */
+.section-left img {
+    height: 200px;
+    /* Mostra dopo, per rendere evidente l'effetto
+       del testo attorno all'immagine */
+    float: left;
+    margin-right: 16px;
+}
+
+/* 2 FLOAT RIGHT */
+.section-right img {
+    height: 200px;
+    float: right;
+    margin-left: 16px;
+}
+
+/*
+3 IMPLEMENTAZIONE CLEARFIX
+https://css-tricks.com/all-about-floats/#aa-clearing-the-float
+*/
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
