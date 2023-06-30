@@ -1,3 +1,4 @@
+/* Common */
 *
 {
   margin: 0;
@@ -9,7 +10,30 @@ body {
   background-color: whitesmoke;
 }
 
+.container {
+  width: 80%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
 
+
+.row {
+  width: 100%;
+}
+.row::after, .clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.col-4 {
+  float: left;
+  width: calc(100% / 12 * 4); /* 100% / 3  = 33.33% */
+}
+
+/* Common */
+
+/* Debug */
 .debug #site_header {
   height: 70px;
   background-color: deeppink;
@@ -18,4 +42,47 @@ body {
 {
   height: 700px;
   background-color: deepskyblue;
+}
+
+.debug .container {
+  padding-top: 3rem;
+  height: 100%;
+  background-color: orange;
+}
+
+.debug .row {
+  padding-top: 10px;
+  height: 260px;
+  background-color: aqua;
+}
+.debug .col-4 {
+  height: 100px;
+  border: 1px solid lightcyan;
+  background-color: rgba(128, 128, 128, 0.807);
+}
+.debug .avatar {
+  height: 100px;
+  background-color: blue;
+}
+.debug .details{
+  height: 100%;
+  background-color: rgb(108, 151, 151);
+}
+/* Debug */
+
+
+/* Main */
+
+
+.avatar, .details {
+  float: left;
+}
+
+.avatar {
+  width: 100px;
+}
+
+.details
+{
+  width: calc(100% - 100px);
 }
