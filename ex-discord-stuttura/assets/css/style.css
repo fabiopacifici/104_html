@@ -1,0 +1,144 @@
+/* #region Common */
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  padding: 2rem 0;
+}
+
+/* #endregion Common */
+
+/* #region Debug */
+.debug .container
+{
+  background-color: rgb(255, 166, 0);
+}
+
+.debug [class^='col-']
+{
+  height: 200px;
+  background-color: palegreen;
+  border: 1px dashed;
+}
+
+.debug .h-50
+{
+  height: 500px;
+}
+
+.debug .login,
+.debug .logo,
+.debug .menu
+{
+  border: 1px dashed;
+}
+
+.debug .container-sm
+{
+  background-color: palevioletred;
+  height: 100%;
+}
+/* #endregion Debug */
+
+/* #region Utilities */
+
+.d-flex {
+  display: flex;
+}
+
+.container-sm
+{
+  max-width: 800px;
+  width: 60%;
+  margin: auto;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+
+/* Flex Grid */
+.container
+{
+  max-width: 1170px;
+  width: 80%;
+  margin: auto;
+}
+.row {
+  display: flex;
+  /* negative margin */
+}
+
+[class^='col-']
+{
+  padding: 0 1rem;
+}
+
+.col-3{
+  width: calc(100% / 12 * 3);
+}
+.col-4
+{
+  width: calc(100% / 12 * 4);
+}
+.col-8 {
+  width: calc(100% / 12 * 8);
+}
+
+
+/* Spacings */
+
+.py-3 {
+  padding: 0.75rem 0;
+}
+
+/* Colors */
+.bg_section {
+  background-color: #ededed;
+}
+
+/* #endregion Utility */
+
+/* #region Header */
+
+header {
+  background-color: blue;
+}  
+
+.logo, .login {
+  width: 20%;
+}
+.menu {
+  width: 60%;
+  text-align: center;
+}
+.login {
+  text-align: end;
+}
+/* #endregion Header */
+
+/* #region Main */
+
+.jumbotron {
+  background-color: paleturquoise;
+  height: 450px; /* we might need to keep this */
+  padding: 2rem 0;
+}
+
+
+
+/* #endregion Main */
+
+
+/* #region Footer */
+footer {
+  background-color: darkblue;
+}
+footer > .top, footer > .bottom {
+  padding: 1rem 0;
+}
+
+/* #endregion Footer */
