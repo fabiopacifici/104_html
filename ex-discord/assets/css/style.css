@@ -33,9 +33,12 @@ a
 {
   text-decoration: none;
 }
-p {
+
+p
+{
   line-height: 1.5rem;
 }
+
 .list-inline
 {
   list-style: none;
@@ -46,7 +49,8 @@ p {
   flex-wrap: wrap;
 }
 
-.img-fluid {
+.img-fluid
+{
   max-width: 100%;
 }
 
@@ -149,7 +153,8 @@ p {
 }
 
 /* Typografy */
-.text-center {
+.text-center
+{
   text-align: center;
 }
 
@@ -159,9 +164,12 @@ p {
 {
   padding: 0.75rem 0;
 }
-.my-4{
+
+.my-4
+{
   margin: 2rem 0;
 }
+
 /* Colors */
 .bg_section
 {
@@ -182,11 +190,13 @@ p {
   background-color: var(--ds-light);
   color: var(--ds-dark);
 }
+
 .btn-dark
 {
   background-color: var(--ds-dark);
   color: var(--ds-white);
 }
+
 .btn-accent
 {
   background-color: var(--ds-accent-light);
@@ -198,10 +208,12 @@ p {
   font-size: 16px;
 }
 
-.btn-lg {
+.btn-lg
+{
   padding: 0.75rem 1.25rem;
   border-radius: 1.25rem;
 }
+
 /* #endregion Utility */
 
 /* #region Header */
@@ -261,15 +273,19 @@ header
   padding: 2rem 0;
   text-align: center;
 }
-.jumbotron h1 {
+
+.jumbotron h1
+{
   font-size: 3.5rem;
   color: var(--ds-white);
 }
 
-.jumbotron p {
+.jumbotron p
+{
   font-size: 1.2rem;
   color: var(--ds-white);
 }
+
 .call_action
 {
   margin: 2rem 0;
@@ -284,26 +300,87 @@ section h2
   padding: 2rem 0;
 }
 
-.call_to_action h3 {
+.call_to_action h3
+{
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
+.wave_top, .wave_bottom {
+  color: #ededed;
+}
+.wave_top
+{
+  margin-bottom: -0.5rem;
+}
+.wave_bottom
+{
+  transform: rotate(180deg);
+  margin-top: -0.5rem;
+}
 
 /* #endregion Main */
-
-
 
 /* #region Footer */
 footer
 {
-  background-color: darkblue;
+  padding: 3.5rem 0;
+  background-color: var(--ds-dark);
+  font-size: 0.9rem;
 }
 
-footer > .top,
+footer h3
+{
+  font-size: 1.75rem;
+}
+
+footer h3,
+footer h5
+{
+  color: var(--ds-accent);
+  margin-bottom: 1rem;
+}
+
+.list-unstyled
+{
+  list-style: none;
+}
+
+/* footer > .top,
 footer > .bottom
 {
   padding: 1rem 0;
+} */
+
+footer a
+{
+  color: var(--ds-white);
+  display: inline-block;
+ 
 }
 
+footer li {
+  margin-bottom: 1rem;
+}
+
+
+footer .social, footer .lang {
+  color: var(--ds-white)
+}
+
+footer .lang {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+
+}
+
+footer .social i {
+  padding: 1rem;
+}
+
+.spacing {
+  margin: 2rem 0;
+}
 /* #endregion Footer */
