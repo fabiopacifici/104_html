@@ -10,6 +10,7 @@
 body
 {
   font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  min-width: 1440px;
 }
 
 :root
@@ -43,6 +44,10 @@ p {
   align-items: center;
   gap: 0.5rem;
   flex-wrap: wrap;
+}
+
+.img-fluid {
+  max-width: 100%;
 }
 
 /* 
@@ -143,6 +148,11 @@ p {
   width: calc(100% / 12 * 8);
 }
 
+/* Typografy */
+.text-center {
+  text-align: center;
+}
+
 /* Spacings */
 
 .py-3
@@ -175,6 +185,11 @@ p {
 .btn-dark
 {
   background-color: var(--ds-dark);
+  color: var(--ds-white);
+}
+.btn-accent
+{
+  background-color: var(--ds-accent-light);
   color: var(--ds-white);
 }
 
@@ -262,7 +277,22 @@ header
   justify-content: center;
   gap: 2rem;
 }
+
+section h2
+{
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+
+.call_to_action h3 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+
 /* #endregion Main */
+
+
 
 /* #region Footer */
 footer
