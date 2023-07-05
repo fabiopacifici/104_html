@@ -11,16 +11,42 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body class="debug">
+<body class="">
 
-  <header>
-    <div class="container d-flex py-3">
-      <div class="logo">
-        LOGO
+  <header id="site_header">
+    <nav>
+      <div class="container d-flex py-3">
+        <div class="logo">
+          <a href="/">
+            <img src="./assets/img/logo.svg" alt="">
+          </a>
+        </div>
+        <div class="menu">
+          <!-- option 1  `a` tag
+          <a href="#">Scarica</a>
+          <a href="#">Perché discord</a>
+          <a href="#">Nitro</a>
+          <a href="#">Sicurezza</a>
+          <a href="#">Assistenza</a>
+        -->
+          <!-- opzione 2 `ul` -->
+  
+  
+          <ul class="list-inline">
+            <li><a href="#">Scarica</a></li>
+            <li><a href="#">Perché discord</a></li>
+            <li><a href="#">Nitro</a></li>
+            <li><a href="#">Sicurezza</a></li>
+            <li><a href="#">Assistenza</a></li>
+  
+          </ul>
+  
+        </div>
+        <div class="login">
+          <a class="btn btn-light btn-sm" href="#">Accedi</a>
+        </div>
       </div>
-      <div class="menu">menu</div>
-      <div class="login">login</div>
-    </div>
+    </nav>
   </header>
   <main>
     <div class="jumbotron">
