@@ -14,7 +14,7 @@ body
 
 :root
 {
-  --ds-primary: #3060e0;
+  --ds-primary: #255ee9;
   --ds-accent: #7389db;
   --ds-accent-light: #8fa1e0;
   --ds-dark: #23262b;
@@ -32,7 +32,9 @@ a
 {
   text-decoration: none;
 }
-
+p {
+  line-height: 1.5rem;
+}
 .list-inline
 {
   list-style: none;
@@ -147,7 +149,9 @@ a
 {
   padding: 0.75rem 0;
 }
-
+.my-4{
+  margin: 2rem 0;
+}
 /* Colors */
 .bg_section
 {
@@ -168,12 +172,21 @@ a
   background-color: var(--ds-light);
   color: var(--ds-dark);
 }
+.btn-dark
+{
+  background-color: var(--ds-dark);
+  color: var(--ds-white);
+}
 
 .btn-sm
 {
   font-size: 16px;
 }
 
+.btn-lg {
+  padding: 0.75rem 1.25rem;
+  border-radius: 1.25rem;
+}
 /* #endregion Utility */
 
 /* #region Header */
@@ -224,12 +237,31 @@ header
 
 .jumbotron
 {
-  background-color: paleturquoise;
+  background-color: var(--ds-primary);
+  background-image: url(../img/jumbo.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 450px;
-  /* we might need to keep this */
   padding: 2rem 0;
+  text-align: center;
+}
+.jumbotron h1 {
+  font-size: 3.5rem;
+  color: var(--ds-white);
 }
 
+.jumbotron p {
+  font-size: 1.2rem;
+  color: var(--ds-white);
+}
+.call_action
+{
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
 /* #endregion Main */
 
 /* #region Footer */
