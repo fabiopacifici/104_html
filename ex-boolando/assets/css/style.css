@@ -1,0 +1,37 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bl-dark: #000101;
+  --bl-primary:#fe6901;
+  --bl-white: white;
+  --bl-danger: #fe0001;
+  --bl-success: #018001;
+}
+
+
+#site_header {
+  background-color: var(--bl-primary);
+}
+#site_footer
+{
+  background-color: var(--bl-dark);
+  color: var(--bl-white);
+}
+.debug header {
+  height: 70px;
+}
+
+.debug main {
+  height: 800px;
+  background-color: paleturquoise;
+}
+
+.debug footer {
+  height: 70px;
+}
+
