@@ -20,6 +20,7 @@
 :root
 {
   --zoom-black: #010001;
+  --zoom-black-50: rgba(0, 0, 0, 0.5);
   --zoom-dark: #4a4b4b;
   --zoom-darker: #222222;
   --zoom-danger: #ec1430;
@@ -34,36 +35,76 @@ body
 }
 
 /* Utilities */
-.btn {
+.btn
+{
   display: inline-block;
   border: none;
   padding: 0.3rem 0.25rem;
   border-radius: 0.25rem;
   background-color: transparent;
 }
-.btn-dark {
+
+.btn-dark
+{
   background-color: var(--zoom-dark);
   color: var(--zoom-white);
 }
 
 /* Header */
-header {
+header
+{
   height: 40px;
   text-align: end;
   padding: 0.25rem;
 
 }
 
-
 /* Main */
-main {
+main
+{
   height: calc(100vh - 120px);
 }
 
+.parecipants
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow-y: auto;
+  padding: 1rem 0;
+}
 
+.partecipant
+{
+  width: 250px;
+  height: 150px;
+  border: 1px solid var(--zoom-dark);
+  position: relative;
+}
+
+.partecipant img
+{
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.partecipant .username
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.415);
+  padding: 0.25rem 0.5rem;
+  overflow: hidden;
+}
 
 /* Footer */
-footer {
+footer
+{
   height: 80px;
   background-color: var(--zoom-darker);
 }
