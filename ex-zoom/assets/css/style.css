@@ -1,0 +1,69 @@
+/* Debug */
+.debug header
+{
+  background-color: #4ac302;
+}
+
+.debug main
+{
+  background-color: #ec1430;
+}
+
+/* Common */
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root
+{
+  --zoom-black: #010001;
+  --zoom-dark: #4a4b4b;
+  --zoom-darker: #222222;
+  --zoom-danger: #ec1430;
+  --zoom-share: #4ac302;
+  --zoom-white: white;
+}
+
+body
+{
+  background-color: var(--zoom-black);
+  color: var(--zoom-white);
+}
+
+/* Utilities */
+.btn {
+  display: inline-block;
+  border: none;
+  padding: 0.3rem 0.25rem;
+  border-radius: 0.25rem;
+  background-color: transparent;
+}
+.btn-dark {
+  background-color: var(--zoom-dark);
+  color: var(--zoom-white);
+}
+
+/* Header */
+header {
+  height: 40px;
+  text-align: end;
+  padding: 0.25rem;
+
+}
+
+
+/* Main */
+main {
+  height: calc(100vh - 120px);
+}
+
+
+
+/* Footer */
+footer {
+  height: 80px;
+  background-color: var(--zoom-darker);
+}
