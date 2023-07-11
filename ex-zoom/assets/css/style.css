@@ -32,9 +32,20 @@ body
 {
   background-color: var(--zoom-black);
   color: var(--zoom-white);
+  /* min-width: 1200px; per limitare quanto il body si restringe finché non sappiamo come fare il responsive */
 }
 
 /* Utilities */
+.d-flex
+{
+  display: flex;
+}
+
+.align-items-center
+{
+  align-items: center;
+}
+
 .btn
 {
   display: inline-block;
@@ -47,6 +58,12 @@ body
 .btn-dark
 {
   background-color: var(--zoom-dark);
+  color: var(--zoom-white);
+}
+
+.btn-danger
+{
+  background-color: var(--zoom-danger);
   color: var(--zoom-white);
 }
 
@@ -85,6 +102,13 @@ main
   position: relative;
 }
 
+.partecipant {
+  transition: border 500ms;
+}
+.partecipant:hover {
+  border: 4px solid var(--zoom-share);
+}
+
 .partecipant img
 {
   max-width: 100%;
@@ -107,4 +131,33 @@ footer
 {
   height: 80px;
   background-color: var(--zoom-darker);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings,
+.controls
+{
+  display: flex;
+  gap: 0.25rem;
+}
+
+.icon
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem
+}
+
+.share_screen i
+{
+  color: var(--zoom-share);
+}
+
+footer .icon span
+{
+  font-size: 0.75rem;
 }

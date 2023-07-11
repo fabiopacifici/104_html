@@ -1,0 +1,49 @@
+div
+{
+  width: 200px;
+  aspect-ratio: 1;
+  background-color: red;
+  position: absolute;
+  animation-name: move;
+  animation-duration: 3s;
+}
+
+/* filter: filterName(filterValue); */
+
+@keyframes move
+{
+  0%
+  {
+    background-color: red;
+    left: 0;
+    top: 0;
+  }
+
+  25%
+  {
+    background-color: yellow;
+    left: 200px;
+    top: 0;
+  }
+
+  50%
+  {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+
+  75%
+  {
+    background-color: green;
+    left: 0;
+    top: 200px;
+  }
+
+  100%
+  {
+    background-color: red;
+    left: 0;
+    top: 0;
+  }
+}
