@@ -1,0 +1,59 @@
+/* Approccio Mobile First */
+
+body {
+	background-color: #f2f2f2;
+	font-size: 1.5rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+	font-size: 2rem;
+}
+
+@media screen and (min-width: 480px)
+{
+
+	body
+	{
+		background-color: lightgreen;
+	}
+
+	h1{
+		font-size: 3.5rem;
+	}
+
+}
+
+
+@media screen and (min-width: 768px)
+{
+
+	body
+	{
+		background-color: paleturquoise;
+	}
+
+	h1
+	{
+		font-size: 5.5rem;
+	}
+
+}
+
+
+@media screen and (min-width: 1200px)
+{
+
+	body
+	{
+		background-color: palevioletred;
+	}
+
+	h1
+	{
+		font-size: 7.5rem;
+	}
+
+}
+
+/* Approccio Desktop first */
+
