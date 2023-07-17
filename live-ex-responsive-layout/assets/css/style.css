@@ -1,0 +1,165 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	background-color: #f2f2f2;
+}
+
+.debug #site_header
+{
+	height: 70px;
+	background-color: blue;
+}
+
+.debug #site_main
+{
+	height: 1000px;
+	background-color: rgb(36, 135, 23);
+}
+
+.debug #site_footer
+{
+	height: 200px;
+	background-color: rgb(135, 23, 94);
+}
+
+.debug [class^='col-']
+{
+	background-color: green;
+	height: 200px;
+	border: 1px dashed white;
+}
+
+/* Utilities */
+
+.container
+{
+	max-width: 1152px;
+	width: 80%;
+	margin: auto;
+}
+
+.row
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1rem;
+}
+
+[class^='col-']
+{
+	padding: 0 1rem;
+}
+
+.col-4
+{
+	width: calc(100% / 12 * 4);
+}
+
+.col-6
+{
+	width: calc(100% / 12 * 6);
+}
+
+.col-8
+{
+	width: calc(100% / 12 * 8);
+}
+
+.col-12
+{
+	width: 100%;
+}
+
+.d-none
+{
+	display: none;
+}
+
+.d-block
+{
+	display: block;
+}
+
+/* Moibile First */
+header
+{
+	background-color: blue;
+}
+
+header nav
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+header nav > .desktop_menu
+{
+	display: none;
+}
+
+@media screen and (min-width: 768px)
+{
+	.d-md-none
+	{
+		display: none;
+	}
+
+	.d-md-block
+	{
+		display: block;
+	}
+
+	.col-md-4
+	{
+		width: calc(100% / 12 * 4);
+	}
+
+	.col-md-6
+	{
+		width: calc(100% / 12 * 6);
+	}
+
+	.col-md-8
+	{
+		width: calc(100% / 12 * 8);
+	}
+
+	.col-md-12
+	{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1024px)
+{
+	header nav > .mobile_menu
+	{
+		display: none;
+	}
+
+	header nav > .desktop_menu
+	{
+		display: block;
+	}
+}
+
+@media screen and (min-width: 1440px)
+{
+	.container
+	{
+		max-width: 1400px;
+	}
+
+	.d-lg-block
+	{
+		display: block;
+	}
+}
