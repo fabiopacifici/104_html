@@ -1,0 +1,157 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root
+{
+	--sp-black: black;
+	--sp-dark: #282828;
+	/* --sp-call-to-a: #080b12;
+		--sp-main-bg: #141922;
+		--sp-light: #ffffff;
+		--sp-sec-bg: ;
+		--sp-secondary: #74767b;
+		--sp-medium: #a3a3a3; */
+}
+
+body
+{
+	background-color: black;
+	color: white;
+}
+
+
+
+/* Debug */
+
+.debug .top
+{
+	background-color: palevioletred;
+}
+
+.debug main
+{
+	background-color: paleturquoise;
+}
+
+.debug [class^="col-"]
+{
+	padding: 1rem;
+	background-color: aquamarine;
+}
+
+/* App */
+
+.wrapper
+{
+	height: 100vh;
+}
+
+/* Utility */
+
+.container
+{
+	width: 90%;
+	max-width: 1176px;
+	margin: auto
+}
+
+.row
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1rem
+}
+
+[class^="col-"]{
+	padding: 0 1rem;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+
+
+/* Top */
+.top
+{
+	height: calc(100% - 80px);
+	display: flex;
+}
+
+.top .sidebar
+{
+	width: 50px;
+	height: 100%;
+	background-color: var(--sp-black);
+}
+
+/* Main */
+.top main
+{
+	width: calc(100% - 50px);
+	height: 100%;
+	
+	overflow-x: hidden;
+}
+
+.banner {
+	height: 50px;
+	background-color: greenyellow;
+}
+
+.top main .albums {
+	overflow-y: auto;
+	height: calc(100% - 50px);
+}
+
+
+
+
+/* Footer */
+footer.player
+{
+	height: 80px;
+	background-color: var(--sp-dark);
+}
+
+/* 
+Media sm
+*/
+
+@media screen and (min-width: 576px)
+{
+	.top .sidebar
+	{
+		width: 230px;
+	}
+
+	.top main
+	{
+		width: calc(100% - 230px);
+		height: 100%;
+	}
+}
+
+
+
+
+@media screen and (min-width: 768px)
+{
+	.col-md-3 {
+		width: calc(100% / 12 * 3);
+	}
+}
+
+
+@media screen and (min-width: 1200px)
+{
+	.col-lg-2
+	{
+		width: calc(100% / 12 * 2);
+	}
+}
