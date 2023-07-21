@@ -9,8 +9,8 @@
 {
 	--sp-black: black;
 	--sp-dark: #282828;
+	--sp-bg-body: #141922;
 	/* --sp-call-to-a: #080b12;
-		--sp-main-bg: #141922;
 		--sp-light: #ffffff;
 		--sp-sec-bg: ;
 		--sp-secondary: #74767b;
@@ -19,11 +19,37 @@
 
 body
 {
-	background-color: black;
+	background-color: var(--sp-bg-body);
 	color: white;
+	font-family: 'Poppins', sans-serif
 }
 
+a
+{
+	text-decoration: none;
+}
 
+img
+{
+	max-width: 100%;
+}
+
+section h2
+{
+	padding-top: 2rem;
+	padding-bottom: 0.5rem;
+}
+
+section .card h3
+{
+	font-size: 1rem;
+}
+
+section p
+{
+	color: gray;
+	margin-bottom: 1rem;
+}
 
 /* Debug */
 
@@ -54,8 +80,8 @@ body
 
 .container
 {
-	width: 90%;
-	max-width: 1176px;
+	width: 80%;
+	max-width: 375px;
 	margin: auto
 }
 
@@ -63,18 +89,33 @@ body
 {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -1rem
+	margin: 0 -0.5rem
 }
 
-[class^="col-"]{
-	padding: 0 1rem;
+[class^="col-"]
+{
+	padding: 0 0.5rem;
 }
 
-.col-6 {
+.col-6
+{
 	width: 50%;
 }
 
+.btn
+{
+	display: inline-block;
+	background-color: transparent;
+	border-radius: 1rem;
+	padding: 0.25rem 1rem;
+	text-decoration: none;
+}
 
+.btn-outline
+{
+	color: white;
+	border: 1px solid white;
+}
 
 /* Top */
 .top
@@ -95,22 +136,144 @@ body
 {
 	width: calc(100% - 50px);
 	height: 100%;
-	
 	overflow-x: hidden;
 }
 
-.banner {
+.banner
+{
+	text-align: end;
+	padding: 0.5rem;
 	height: 50px;
-	background-color: greenyellow;
+	background-color: var(--sp-black);
 }
 
-.top main .albums {
+.banner .btn
+{
+	transition: all 1s;
+}
+
+.banner .btn:hover
+{
+	transform: scale(1.05);
+	background-color: white;
+	color: var(--sp-bg-body);
+}
+
+.top main .albums
+{
 	overflow-y: auto;
+	overflow-x: hidden;
 	height: calc(100% - 50px);
 }
+.albums nav {
+	background-color: var(--sp-bg-body);
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+.albums nav ul
+{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	justify-content: center;
+	gap: 1rem;
+}
 
+.albums nav ul li.active::after
+{
+	content: '';
+	width: 30px;
+	height: 2px;
+	background-color: limegreen;
+	display: block;
+	margin: auto;
+}
 
+.albums nav a
+{
+	color: gray;
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	font-weight: 600;
+}
 
+.albums nav a:hover
+{
+	color: limegreen;
+}
+
+.albums .card:hover .overlay
+{
+	display: flex;
+}
+
+.albums .card h3
+{
+	font-weight: 500;
+}
+
+.albums .card h4
+{
+	font-weight: 500;
+	color: gray;
+}
+
+.card
+{
+	margin-bottom: 2rem;
+	text-align: center;
+	background-color: var(--sp-dark);
+	padding: 0.5rem;
+	border-radius: 1.25rem;
+	transition: transform 1s, filter 1s ease-in-out;
+
+}
+
+.card:hover
+{
+	border: 1px solid #ededed4c;
+	transform: scale(1.1);
+	cursor: pointer;
+	filter: drop-shadow(0 0 5px gray);
+}
+
+.card-img
+{
+	position: relative;
+}
+
+.card-img img
+{
+	display: block;
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	border-radius: 1.25rem;
+}
+
+.card-img > .overlay
+{
+	display: none;
+}
+
+.card-img > .overlay
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #14192274;
+	align-items: center;
+	justify-content: center;
+}
+
+.popular img, .popular .overlay
+{
+	border-radius: 50%;
+}
 
 /* Footer */
 footer.player
@@ -123,8 +286,30 @@ footer.player
 Media sm
 */
 
+@media screen and (max-width: 425px)
+{
+
+	.container
+	{
+		max-width: 400px;
+	}
+
+	/* Posso sovrascrivere in un breakpoint il comporamento delle colonne se necessario */
+	.row > div
+	{
+		width: 100%;
+	}
+
+}
+
 @media screen and (min-width: 576px)
 {
+
+	.container
+	{
+		max-width: 528px;
+	}
+
 	.top .sidebar
 	{
 		width: 230px;
@@ -135,22 +320,46 @@ Media sm
 		width: calc(100% - 230px);
 		height: 100%;
 	}
+
 }
-
-
-
 
 @media screen and (min-width: 768px)
 {
-	.col-md-3 {
+
+	.container
+	{
+		max-width: 720px;
+	}
+
+	.col-md-4
+	{
+		width: calc(100% / 12 * 4);
+	}
+}
+
+@media screen and (min-width: 1200px)
+{
+
+	.container
+	{
+		max-width: 1152px;
+	}
+
+	.col-lg-3
+	{
 		width: calc(100% / 12 * 3);
 	}
 }
 
-
-@media screen and (min-width: 1200px)
+@media screen and (min-width: 1440px)
 {
-	.col-lg-2
+
+	.container
+	{
+		max-width: 1392px;
+	}
+
+	.col-xl-2
 	{
 		width: calc(100% / 12 * 2);
 	}
