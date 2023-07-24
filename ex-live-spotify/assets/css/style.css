@@ -1,3 +1,4 @@
+/* #region Common */
 *
 {
 	margin: 0;
@@ -22,6 +23,11 @@ body
 	background-color: var(--sp-bg-body);
 	color: white;
 	font-family: 'Poppins', sans-serif
+}
+
+.wrapper
+{
+	height: 100vh;
 }
 
 a
@@ -51,7 +57,14 @@ section p
 	margin-bottom: 1rem;
 }
 
-/* Debug */
+ul
+{
+	list-style: none;
+}
+
+/* #endregion Common */
+
+/* #region Debug */
 
 .debug .top
 {
@@ -69,12 +82,7 @@ section p
 	background-color: aquamarine;
 }
 
-/* App */
-
-.wrapper
-{
-	height: 100vh;
-}
+/* #endregion Debug */
 
 /* Utility */
 
@@ -117,6 +125,16 @@ section p
 	border: 1px solid white;
 }
 
+.mb-2
+{
+	margin-bottom: 1rem;
+}
+
+.d-flex
+{
+	display: flex;
+}
+
 /* Top */
 .top
 {
@@ -129,8 +147,108 @@ section p
 	width: 50px;
 	height: 100%;
 	background-color: var(--sp-black);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
+/* Sidebar top */
+.sidebar_top .logo {
+	padding: 0.5rem;
+}
+.main_menu a
+{
+	padding: 0 0.5rem;
+}
+
+.sidebar_top
+{
+	.logo_desktop
+	{
+		display: none;
+	}
+}
+
+.main_menu
+{
+	margin: 1rem 0;
+}
+
+.main_menu a
+{
+	display: flex;
+	align-items: center;
+	color: gray;
+}
+
+.main_menu img
+{
+	filter: brightness(0.5)
+}
+
+.main_menu a > span
+{
+	display: none;
+}
+
+.main_menu li.active a
+{
+	color: white;
+}
+
+.main_menu li.active img
+{
+	filter: none;
+}
+
+/* Playlist */
+.playlists
+{
+	display: none;
+}
+
+.add_playlist
+{
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+button.add
+{
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Sidebar bottom */
+.sidebar .sidebar_bottom
+{
+	background-color: var(--sp-black);
+	padding: 0.5rem;
+}
+
+.sidebar_bottom hr
+{
+	margin: 0.5rem 0;
+}
+
+.sidebar_bottom .picture
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	background-color: var(--sp-dark);
+}
+.sidebar_bottom .text {
+	display: none;
+}
 /* Main */
 .top main
 {
@@ -165,18 +283,20 @@ section p
 	overflow-x: hidden;
 	height: calc(100% - 50px);
 }
-.albums nav {
+
+.albums nav
+{
 	background-color: var(--sp-bg-body);
 	position: sticky;
 	top: 0;
 	left: 0;
 	z-index: 1000;
 }
+
 .albums nav ul
 {
 	display: flex;
 	flex-wrap: wrap;
-	list-style: none;
 	justify-content: center;
 	gap: 1rem;
 }
@@ -270,7 +390,8 @@ section p
 	justify-content: center;
 }
 
-.popular img, .popular .overlay
+.popular img,
+.popular .overlay
 {
 	border-radius: 50%;
 }
@@ -314,6 +435,53 @@ Media sm
 	{
 		width: 230px;
 	}
+
+	.sidebar .main_menu
+	{
+		margin-top: 1rem;
+	}
+
+	.main_menu a,
+	.playlists
+	{
+		padding: 0 1rem;
+	}
+
+	.sidebar_top .logo
+	{
+		padding: 1rem;
+	}
+
+	.sidebar_top .logo_mobile
+	{
+		display: none;
+	}
+
+	.sidebar_top .logo_desktop
+	{
+		display: block;
+	}
+
+	.main_menu li.active
+	{
+		border-left: 2px solid limegreen;
+	}
+
+	.main_menu a > span
+	{
+		display: inline;
+	}
+
+	.playlists
+	{
+		display: block;
+	}
+
+	.sidebar_bottom .text {
+		display: block;
+		padding-left: 0.25rem;
+	}
+
 
 	.top main
 	{

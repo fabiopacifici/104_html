@@ -3,7 +3,9 @@
 
 <head>
 	<title>Spotify</title>
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous' referrerpolicy='no-referrer' />
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css'
+		integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=='
+		crossorigin='anonymous' referrerpolicy='no-referrer' />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel='preconnect' href='https://fonts.googleapis.com'>
@@ -14,11 +16,73 @@
 </head>
 
 <body class="">
-
-
 	<div class="wrapper">
 		<div class="top">
-			<div class="sidebar"></div>
+			<div class="sidebar">
+				<div class="sidebar_top">
+					<div class="logo">
+						<img class="logo_mobile" src="./assets/img/logo-small.svg" alt="">
+						<img width="150" class="logo_desktop" src="./assets/img/logo.svg" alt="">
+					</div>
+					<!-- /.logo -->
+					<nav class="main_menu">
+						<ul>
+							<li class="active">
+								<a href="">
+									<img width="32" src="./assets/img/home.svg" alt="">
+									<span>Home</span>									
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img width="32" src="./assets/img/search.svg" alt="">
+									<span>Cerca</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img width="32" src="./assets/img/libreria.svg" alt="">
+									<span>Library</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- /.main_menu -->
+					<div class="playlists">
+							<h5 class="mb-2">Playlists</h5>
+							<div class="add_playlist">
+								<button class="add">
+									<i class="fas fa-plus"></i>
+								</button>
+								<span>Add Plalist</span>
+							</div>
+							<ul>
+								<li>Lorem</li>
+								<li>Lorem</li>
+								<li>Lorem</li>
+								<li>Lorem</li>
+								<li>Lorem</li>
+								<li>Lorem</li>
+							</ul>
+					</div>
+
+				</div>
+				<!-- /.sidebar_top -->
+				<div class="sidebar_bottom">
+					<div class="action d-flex">
+						<img width="24" src="./assets/img/download.svg" alt="">
+						<div class="text">Effettua l'upgrade</div>
+					</div>
+					<hr>
+					<div class="user_profile d-flex">
+						<div class="picture">
+							<img width="18" src="./assets/img/profile.svg" alt="">
+						</div>
+						<div class="text">jhon doe</div>
+					</div>
+				</div>
+				<!-- /.sidebar_bottom -->
+			</div>
 			<main>
 
 				<div class="banner">
@@ -58,76 +122,76 @@
 										</div>
 									</div>
 								</div>
-							<div class="col-6 col-md-4 col-lg-3 col-xl-2">
-								<div class="card">
-									<div class="card-img">
-										<img src="./assets/img/aquietplace.jpeg" alt="">
-										<div class="overlay">
-											<i class="fas fa-play-circle fa-lg fa-fw"></i>
+								<div class="col-6 col-md-4 col-lg-3 col-xl-2">
+									<div class="card">
+										<div class="card-img">
+											<img src="./assets/img/aquietplace.jpeg" alt="">
+											<div class="overlay">
+												<i class="fas fa-play-circle fa-lg fa-fw"></i>
+											</div>
+										</div>
+										<div class="card-body">
+											<h3>Lorem, ipsum.</h3>
+											<h4>Subtitle</h4>
 										</div>
 									</div>
-									<div class="card-body">
-										<h3>Lorem, ipsum.</h3>
-										<h4>Subtitle</h4>
-									</div>
 								</div>
-							</div>
-							<div class="col-6 col-md-4 col-lg-3 col-xl-2">
-								<div class="card">
-									<div class="card-img">
-										<img src="./assets/img/cure.jpeg" alt="">
-										<div class="overlay">
-											<i class="fas fa-play-circle fa-lg fa-fw"></i>
+								<div class="col-6 col-md-4 col-lg-3 col-xl-2">
+									<div class="card">
+										<div class="card-img">
+											<img src="./assets/img/cure.jpeg" alt="">
+											<div class="overlay">
+												<i class="fas fa-play-circle fa-lg fa-fw"></i>
+											</div>
+										</div>
+										<div class="card-body">
+											<h3>Lorem, ipsum.</h3>
+											<h4>Subtitle</h4>
 										</div>
 									</div>
-									<div class="card-body">
-										<h3>Lorem, ipsum.</h3>
-										<h4>Subtitle</h4>
-									</div>
 								</div>
-							</div>
-							<div class="col-6 col-md-4 col-lg-3 col-xl-2">
-								<div class="card">
-									<div class="card-img">
-										<img src="./assets/img/einaudi.jpeg" alt="">
-										<div class="overlay">
-											<i class="fas fa-play-circle fa-lg fa-fw"></i>
+								<div class="col-6 col-md-4 col-lg-3 col-xl-2">
+									<div class="card">
+										<div class="card-img">
+											<img src="./assets/img/einaudi.jpeg" alt="">
+											<div class="overlay">
+												<i class="fas fa-play-circle fa-lg fa-fw"></i>
+											</div>
+										</div>
+										<div class="card-body">
+											<h3>Lorem, ipsum.</h3>
+											<h4>Subtitle</h4>
 										</div>
 									</div>
-									<div class="card-body">
-										<h3>Lorem, ipsum.</h3>
-										<h4>Subtitle</h4>
-									</div>
 								</div>
-							</div>
-							<div class="col-6 col-md-4 col-lg-3 col-xl-2">
-								<div class="card">
-									<div class="card-img">
-										<img src="./assets/img/stranger.jpeg" alt="">
-										<div class="overlay">
-											<i class="fas fa-play-circle fa-lg fa-fw"></i>
+								<div class="col-6 col-md-4 col-lg-3 col-xl-2">
+									<div class="card">
+										<div class="card-img">
+											<img src="./assets/img/stranger.jpeg" alt="">
+											<div class="overlay">
+												<i class="fas fa-play-circle fa-lg fa-fw"></i>
+											</div>
+										</div>
+										<div class="card-body">
+											<h3>Lorem, ipsum.</h3>
+											<h4>Subtitle</h4>
 										</div>
 									</div>
-									<div class="card-body">
-										<h3>Lorem, ipsum.</h3>
-										<h4>Subtitle</h4>
-									</div>
 								</div>
-							</div>
-							<div class="col-6 col-md-4 col-lg-3 col-xl-2">
-								<div class="card">
-									<div class="card-img">
-										<img src="./assets/img/sinister.jpeg" alt="">
-										<div class="overlay">
-											<i class="fas fa-play-circle fa-lg fa-fw"></i>
+								<div class="col-6 col-md-4 col-lg-3 col-xl-2">
+									<div class="card">
+										<div class="card-img">
+											<img src="./assets/img/sinister.jpeg" alt="">
+											<div class="overlay">
+												<i class="fas fa-play-circle fa-lg fa-fw"></i>
+											</div>
+										</div>
+										<div class="card-body">
+											<h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+											<h4>Subtitle</h4>
 										</div>
 									</div>
-									<div class="card-body">
-										<h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
-										<h4>Subtitle</h4>
-									</div>
 								</div>
-							</div>
 							</div>
 						</div>
 					</section>
