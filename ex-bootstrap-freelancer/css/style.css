@@ -1,0 +1,238 @@
+/* mix */
+.ms_inner-wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+.ms_section-green {
+  background-color: #1ABC9C;
+  color: #fff;
+}
+.ms_btn-green {
+  background: #1ABC9C;
+  color: #fff;
+}
+.ms_btn-green:hover,
+.ms_btn-green:active,
+.ms_btn-green:focus {
+  background: #0f836c;
+  color: #fff;
+}
+.ms_btn-border-white {
+  border: 1px solid #fff;
+  color: white;
+}
+.ms_btn-border-white:hover, 
+.ms_btn-border-white:active, 
+.ms_btn-border-white:focus {
+  color: #2c3e50;
+  background-color: #fff;
+}
+
+/* header */
+header {
+  height: 90px;
+}
+/* per le nostre classi usiamo un prefisso per distinguerle da quelle di bootstrap */
+.navbar.ms_navbar {
+  margin-bottom: 0;
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 20px 0;
+  letter-spacing: 1px;
+}
+.navbar-default.ms_navbar .navbar-brand,
+.navbar-default.ms_navbar .navbar-nav li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+.navbar-default.ms_navbar .navbar-brand {
+  font-size: 26px;
+  font-weight: bold;
+}
+.navbar-default.ms_navbar .navbar-nav li a {
+  font-size: 16px;
+  font-weight: 500;
+}
+.navbar-default.ms_navbar .navbar-nav li a:hover {
+  color: #1ABC9C;
+}
+
+.ms_jumbotron-image {
+  max-width: 250px;
+}
+
+/* typo */
+h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.ms_p {
+  font-size: 20px;
+}
+section {
+  padding: 60px 0;
+}
+
+/* star */
+.ms_star {
+  max-width: 400px;
+  min-width: 100%;
+  margin: 30px auto;
+}
+.ms_star:before,
+.ms_star:after {
+  content: '';
+  display: inline-block;
+  width: 15%;
+  height: 4px;
+  border-radius: 2px;
+  line-height: 4px;
+  vertical-align: middle;
+  background-color: white;
+}
+.ms_star i.fa-star {
+  display: inline-block;
+  width: 8%;
+  font-size: 30px;
+  line-height: 4px;
+  vertical-align: middle;
+}
+.ms_star.ms_star-blue:before,
+.ms_star.ms_star-blue:after {
+  background-color: #2c3e50;
+}
+.ms_star.ms_star-blue i.fa-star {
+  color: #2c3e50;
+}
+
+/* utility classes */
+.ms_mb-20 {
+  margin-bottom: 20px;
+}
+
+/* section portfolio */
+.ms_portfolio-item {
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  /* iniziamo a mostrare overflow ci servirà in futuro */
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+.ms_portfolio-item-image {
+  width: 100%;
+}
+.ms_layover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ms_layover i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  font-size: 70px;
+  color: #fff;
+}
+.ms_portfolio-item:hover .ms_layover {
+  background-color: rgba(26, 188, 156, 0.7);
+}
+.ms_portfolio-item:hover .ms_layover i {
+  display: inline;
+}
+
+/* contact */
+#contact input,
+#contact textarea{
+  padding: 10px 0 30px 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 20px;
+  color: #2c3e50;
+}
+ #contact ::placeholder {
+  color: #f20000;
+  font-size: 20px;
+}
+
+/* footer */
+
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+}
+.ms_footer-pre {
+  background-color:#3a546d;
+  padding: 40px 0;
+}
+.ms_footer-sub {
+  width: 100%;
+  padding: 40px;
+}
+.ms_footer-col .social i {
+  width: 55px;
+  padding: 15px;
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  font-size: 20px;
+}
+
+.ms_link-green {
+  color: #1ABC9C;
+  text-decoration: none;
+}
+.ms_link-green:hover {
+  color: #179980;
+}
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+
+  section {
+    padding: 30px 0;
+  }
+  #about p {
+    margin-bottom: 30px;
+  }
+  .navbar-default.ms_navbar .navbar-brand {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  /* headings */
+  h1{
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+
+  .ms_footer-col {
+    margin-bottom: 30px;
+  }
+
+}
